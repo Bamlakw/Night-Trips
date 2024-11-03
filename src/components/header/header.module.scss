@@ -1,6 +1,8 @@
 @import '@styles/theme.module.scss';
 
 .root {
+    font-family: 'Playfair Display', serif;
+    color: white;
     display: flex;
     flex-direction: row;
     padding-left: 3em;
@@ -11,7 +13,7 @@
     font: $button-font;
 
     @media only screen and (max-width: $mobile-width) {
-        padding: 0 3em
+        padding: 0 3em;
     }
 }
 
@@ -24,4 +26,33 @@
 .active {
     color: $black;
     font-weight: 600;
+}
+.link {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.btn {
+    background-color: #4A90E2; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+
+    &:hover {
+        background-color: #357ABD; /* Darken button on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+        transform: translateY(-2px); /* Slightly move the button up */
+    }
+
+    &:active {
+        transform: translateY(0); /* Return to original position on click */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+    }
 }

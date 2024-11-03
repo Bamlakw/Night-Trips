@@ -1,0 +1,143 @@
+@import '@styles/theme.module.scss';
+.root {
+}
+.div1 {
+    padding-top: 20%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; /* Ensures content stays within this section */
+    padding-bottom: 50px; /* Add space to prevent overlapping with footer */
+
+    @media (max-width: 768px) {
+        padding-top: 15%;
+        padding-bottom: 30px; /* Adjust for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 10%;
+        padding-bottom: 40px; /* Adjust for mobile */
+    }
+}
+.header1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem; /* Reduce size for tablet */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.2rem; /* Reduce size for mobile */
+    }
+}
+.p1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+
+    @media (max-width: 768px) {
+        font-size: 1rem; /* Adjust for tablet */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.9rem; /* Adjust for mobile */
+    }
+}
+.div2 {
+    background-color: #c0a3a3;
+    width: 30%;
+    height: 40%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.div3 {
+    display: flex;
+}
+.testimonialsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    gap: 20px; /* Space between the grid items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+    box-sizing: border-box; /* Ensure padding is included in the element's width and height */
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr; /* Switch to a single column on tablet */
+        align-items: center;
+        justify-items: center;
+    }
+
+    @media (max-width: 768px) {
+        padding: 15px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+        gap: 15px; /* Reduce gap on mobile */
+        margin-bottom: 50px; /* Add space between testimonials and footer */
+    }
+}
+
+.testimonialBox {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    box-sizing: border-box;
+     /* Ensure padding is included in the element's width and height */
+
+    @media (max-width: 768px) {
+        padding: 15px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+        margin-bottom: 20px; /* Add margin between boxes on mobile */
+    }
+    align-items: center;
+}
+.div4 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.div5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+}
+.img1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header2 {
+    font-size: 1rem;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem; /* Adjust for tablet */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.8rem; /* Adjust for mobile */
+    }
+}

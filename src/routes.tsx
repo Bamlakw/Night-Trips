@@ -1,7 +1,8 @@
 import { RouteObject } from 'react-router-dom';
 import { SiteWrapper } from './components/site-wrapper/site-wrapper';
 import { HomePage } from './components/home-page/home-page';
-import { About } from './components/about/about';
+import { AboutUs } from './components/about-us/about-us';
+import ErrorPage from './components/error/error';
 
 export const routes: RouteObject[] = [
     {
@@ -9,7 +10,10 @@ export const routes: RouteObject[] = [
         element: <SiteWrapper />,
         children: [
             { index: true, element: <HomePage /> },
-            { path: 'about', element: <About /> },
+            { path: 'aboutus', element: <AboutUs /> },
+
         ],
+        errorElement: <ErrorPage />,
     },
 ];
+

@@ -1,0 +1,39 @@
+@import '@styles/theme.module.scss';
+.root {
+}
+.wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+.header1 {
+    font-size: 72px;
+    justify-items: end;
+}
+.div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.header2 {
+    font-size: 60px;
+}
+.para {
+}
+.btn {
+}
+.img {
+    padding-top: 20px;
+    width: 50vw;
+}
+.bigdiv {
+    padding: 100px;
+}
+.para {
+    max-width: 40vw;
+}

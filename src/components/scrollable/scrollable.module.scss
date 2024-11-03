@@ -1,0 +1,11 @@
+@import '@styles/theme.module.scss';
+/* iPhone Frame */
+.iphone-frame {
+  width: 375px; /* Standard iPhone width */
+  height: 812px; /* Standard iPhone height */
+  background-color: #000;
+  border-radius: 40px; /* Rounded corners for iPhone aesthetic */
+  border: 15px solid #333; /* Simulate the border of the phone */
+  position: relative;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0
+

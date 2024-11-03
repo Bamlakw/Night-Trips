@@ -1,0 +1,158 @@
+@import '@styles/theme.module.scss';
+.root {
+}
+.buttondiv{
+    color: white ;
+}
+.wrapper{
+    color: white;
+    display: flex;
+    justify-content: center;   /* Centers content horizontally */
+    align-items: center;       /* Centers content vertically */
+    gap: 50px;                 /* Space between title and paragraph */
+    padding: 30px 70px;
+    text-align: center;        /* Center the text inside the container */
+    flex-direction: column;    /* Stack the title and paragraph on top of each other for mobile */
+}
+
+
+.div{
+    color: white;
+}
+.div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.header2 {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn {
+    background-color: #4A90E2; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    margin: 0 auto;
+
+    &:hover {
+        background-color: #357ABD; /* Darken button on hover */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+        transform: translateY(-2px); /* Slightly move the button up */
+    }
+
+    &:active {
+        transform: translateY(0); /* Return to original position on click */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+    }
+}
+.img {
+    padding-top: 20px;
+    width: 50vw;
+}
+.header1{
+    font-family: 'Playfair Display', serif;
+}
+.bigdiv {
+    padding: 100px;
+}
+.para{
+    max-width: 40vw;
+}
+.omg {
+    display: flex;
+    justify-content: center; /* Centers the tabs horizontally */
+    align-items: center;     /* Centers the tabs vertically */
+    gap: 20px;               /* Add space between tabs */
+    margin-bottom: 30px;     /* Adds space between the tabs and content */
+}
+
+.omg .nav-link {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;      /* Adjust padding to control size of the tab buttons */
+    border-radius: 5px;      /* Optional: rounded corners for tabs */
+    color: white;            /* Change color */
+    background-color: #333;  /* Change background */
+}
+
+.omg .nav-link.active {
+    background-color: #4A90E2; /* Background color of active tab */
+    color: white;              /* Text color of active tab */
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Stack title and paragraph on mobile */
+        text-align: center; /* Center text on mobile */
+        gap: 20px;
+    }
+
+    .header1 {
+        font-size: 40px; /* Smaller font size on mobile */
+    }
+
+    .para {
+        max-width: 80vw; /* Expand to 80% of the viewport on mobile */
+    }
+
+    .div {
+        flex-direction: column; /* Stack image and content vertically */
+        gap: 10px;
+    }
+
+    .img {
+        width: 80vw; /* Make the image fill 80% of the screen width */
+    }
+
+    .omg {
+        flex-direction: column; /* Stack tabs vertically on mobile */
+        gap: 10px;
+    }
+
+    .omg .nav-link {
+        padding: 8px 15px; /* Smaller padding for mobile tabs */
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 15px; /* Smaller buttons on mobile */
+        font-size: 14px;
+    }
+}
+
+/* Smaller Mobile Screens (e.g., 480px or below) */
+@media (max-width: 480px) {
+    .header1 {
+        font-size: 32px; /* Further reduce title size on small screens */
+    }
+
+    .para {
+        max-width: 90vw; /* Maximize paragraph width on very small screens */
+    }
+
+    .img {
+        width: 90vw; /* Image width adjusts for small screens */
+    }
+
+    .omg .nav-link {
+        font-size: 14px; /* Adjust tab font size for small screens */
+        padding: 6px 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
